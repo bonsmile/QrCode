@@ -9,7 +9,7 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/dll.rc.in
 
 message(CMAKE_PREFIX_PATH:${CMAKE_PREFIX_PATH})
 
-add_library( QrCode SHARED
+add_library( QrCode STATIC
 	QrCode.hpp
 	QrCode.cpp
 	${VERSION_RC}
