@@ -15,7 +15,7 @@ add_library( QrCode STATIC
 	${VERSION_RC}
 )
 
-target_compile_options( QrCode PRIVATE "/utf-8" "/MP" )
+target_compile_options( QrCode PRIVATE "/utf-8" )
 target_compile_definitions( QrCode PUBLIC -DBUILDING_DLL )
 target_compile_definitions( QrCode PRIVATE -DUNICODE -D_UNICODE )
 target_compile_features( QrCode PRIVATE cxx_std_20 )
